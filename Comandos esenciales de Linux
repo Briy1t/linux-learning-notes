@@ -5,37 +5,41 @@ Se irá ampliando a medida que avance en mi aprendizaje.
 
 ---
 
-## 📁 Navegación básica
-- `pwd` → Muestra la ruta actual
-- `ls` → Lista archivos
-- `ls -l` → Lista con permisos y detalles
+## Navegación básica
+- `pwd` : Muestra la ruta actual
+- `ls` : Lista archivos
+- `ls -l` : Lista con permisos y detalles
 - `cd ruta` → Cambia de directorio
 - `cd ..` → Sube un nivel
 - `cd ~` → Ir al home del usuario
 
 ---
 
-## 📂 Crear archivos y carpetas
-- `mkdir nombre` → Crear carpeta
-- `mkdir -p ruta/otra` → Crear carpetas anidadas
-- `touch archivo` → Crear archivo vacío
-- `rm archivo` → Eliminar archivo
-- `rm -r carpeta` → Eliminar carpeta y contenido
+## Crear archivos y carpetas
+- `mkdir nombre` : Crear carpeta
+- `mkdir -p ruta/otra` : Crear carpetas anidadas
+- `touch archivo` : Crear archivo vacío
+- `rm archivo` : Eliminar archivo
+- `rm -r carpeta` : Eliminar carpeta y contenido
 
 ---
 
-## 👥 Gestión de usuarios
-- `sudo adduser nombre` → Crear usuario con carpeta personal
-- `sudo passwd nombre` → Asignar contraseña
-- `id nombre` → Ver UID, GID y grupos
-- `sudo userdel nombre` → Eliminar usuario
+## Gestión de usuarios
+- `sudo adduser nombre` : Crear usuario con carpeta personal
+- `sudo passwd nombre` : Asignar contraseña
+- `id nombre` : Ver UID, GID y grupos
+- `sudo userdel nombre` : Eliminar usuario
+- `cambiar de usuario` : su - nombre_usuario
+- `sudo useradd .m nombre` :crear un usuario con su carpeta
 
 ---
 
-## 👥 Gestión de grupos
-- `sudo groupadd nombre` → Crear grupo
-- `sudo usermod -aG grupo usuario` → Añadir usuario a un grupo
-- `getent group grupo` → Ver miembros del grupo
+## Gestión de grupos
+- `sudo groupadd nombre` : Crear grupo
+- `sudo usermod -aG grupo usuario` : Añadir usuario a un grupo
+- `getent group grupo` : Ver miembros del grupo
+- `getent group nombre` : Ver si el grupo se creo 
+
 
 ---
 
