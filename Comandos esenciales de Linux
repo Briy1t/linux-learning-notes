@@ -1,0 +1,86 @@
+# Comandos esenciales de Linux
+
+Este documento reúne los comandos más importantes que utilizo durante mi preparación para Linux+.  
+Se irá ampliando a medida que avance en mi aprendizaje.
+
+---
+
+## 📁 Navegación básica
+- `pwd` → Muestra la ruta actual
+- `ls` → Lista archivos
+- `ls -l` → Lista con permisos y detalles
+- `cd ruta` → Cambia de directorio
+- `cd ..` → Sube un nivel
+- `cd ~` → Ir al home del usuario
+
+---
+
+## 📂 Crear archivos y carpetas
+- `mkdir nombre` → Crear carpeta
+- `mkdir -p ruta/otra` → Crear carpetas anidadas
+- `touch archivo` → Crear archivo vacío
+- `rm archivo` → Eliminar archivo
+- `rm -r carpeta` → Eliminar carpeta y contenido
+
+---
+
+## 👥 Gestión de usuarios
+- `sudo adduser nombre` → Crear usuario con carpeta personal
+- `sudo passwd nombre` → Asignar contraseña
+- `id nombre` → Ver UID, GID y grupos
+- `sudo userdel nombre` → Eliminar usuario
+
+---
+
+## 👥 Gestión de grupos
+- `sudo groupadd nombre` → Crear grupo
+- `sudo usermod -aG grupo usuario` → Añadir usuario a un grupo
+- `getent group grupo` → Ver miembros del grupo
+
+---
+
+## 🔐 Permisos (modo simbólico)
+- `chmod u+r archivo` → Añadir lectura al usuario
+- `chmod g+w archivo` → Añadir escritura al grupo
+- `chmod o-r archivo` → Quitar lectura a otros
+- `chmod u=rwx,g=rx,o= archivo` → Establecer permisos exactos
+
+---
+
+## 🔢 Permisos (modo numérico)
+- `chmod 755 archivo`  
+  - usuario: rwx (7)  
+  - grupo: r-x (5)  
+  - otros: r-x (5)
+
+- `chmod 660 archivo`  
+  - usuario: rw- (6)  
+  - grupo: rw- (6)  
+  - otros: --- (0)
+
+---
+
+## 🏷️ Propietarios
+- `sudo chown usuario archivo` → Cambiar propietario
+- `sudo chown usuario:grupo archivo` → Cambiar propietario y grupo
+- `sudo chgrp grupo archivo` → Cambiar solo el grupo
+
+---
+
+## 🛠️ Comandos administrativos
+- `sudo` → Ejecutar como root
+- `sudo su` → Cambiar a root
+- `sudo systemctl status servicio` → Ver estado de un servicio
+- `journalctl -xe` → Ver logs del sistema
+
+---
+
+## 🌐 Comandos de red (básicos)
+- `ip a` → Mostrar interfaces
+- `ping host` → Comprobar conectividad
+- `curl url` → Hacer petición HTTP
+
+---
+
+## 📝 Notas
+Este archivo se actualizará continuamente conforme avance en mi preparación para Linux+.
