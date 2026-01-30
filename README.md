@@ -8,7 +8,7 @@ problemas que he resuelto en mi entorno Linux mientras estudio de forma autodida
 
 ---
 
-## 📚 Contenido del repositorio
+## Contenido del repositorio
 
 - **Comandos esenciales**  
   Explicaciones y ejemplos de uso de los comandos más utilizados en administración Linux.
@@ -33,7 +33,7 @@ problemas que he resuelto en mi entorno Linux mientras estudio de forma autodida
 
 ---
 
-## 🎯 Objetivo del repositorio
+##  Objetivo del repositorio
 
 Este proyecto forma parte de mi formación autodidacta en administración de sistemas Linux.  
 Mi objetivo es documentar todo mi proceso de estudio, crear mis propias herramientas  
@@ -41,7 +41,7 @@ y consolidar conocimientos de cara a la certificación **Linux+**.
 
 ---
 
-## 👩‍💻 Sobre mí
+## Sobre mí
 
 Soy Brígitt, estudiante de administración de sistemas, scripting y cloud computing.  
 Este repositorio refleja mi progreso real, mis prácticas y mi camino hacia la certificación Linux+.
