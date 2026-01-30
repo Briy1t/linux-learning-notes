@@ -137,7 +137,7 @@ Muestra el contenido de un archivo.
 
 bash
 cat archivo.txt
-✅ Resultado final
+Resultado final
 El usuario ana existe
 ---
 Su carpeta personal /home/ana está creada y asignada correctamente
