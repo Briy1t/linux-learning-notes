@@ -43,7 +43,7 @@ y consolidar conocimientos de cara a la certificación **Linux+**.
 
 ## Sobre mí
 
-Soy Brígitt, estudiante de administración de sistemas, scripting y cloud computing.  
+Soy Briyit, estudiante de administración de sistemas, scripting y cloud computing.  
 Este repositorio refleja mi progreso real, mis prácticas y mi camino hacia la certificación Linux+.
 
 # linux-learning-notes
