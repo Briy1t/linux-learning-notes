@@ -18,7 +18,9 @@ whoami
 id
 ```
 
-imagen
+![identificacion usuario ](imagenes/whoiam_id.png)
+
+
 
 | **Grupo**     | **Función principal** |
 | :---  |  :---  | 
@@ -41,17 +43,20 @@ getent group
 ```
 
 -getent passwd: Muestra la lista de usuarios registrados. Aunque incluye la ruta de su "home" (carpeta personal), no te muestra qué hay dentro de ella.
+
+![getend passwd](imagenes/getent%20passwd.png)
+
+
 -getent group: Muestra la lista de grupos y qué usuarios pertenecen a cada uno.
+
+![getend getent group ](imagenes/getent%20_group.png)
+
 
 **Podemos ver**:
 -ver todos los usuarios del sistema
 -comprobar si un usuario existe
 -ver su UID, GID, home y shell
 -usarlo en scripts o auditorías
-
-
-
-imagen 
 
 Linux no solo tiene los grupos de los usuarios humanos, sino también:
 grupos del sistema
@@ -60,7 +65,7 @@ grupos usados por demonios (daemons)
 grupos usados por hardware
 grupos usados por redes
 grupos usados por seguridad
-Tu usuario solo pertenece a algunos, pero el sistema tiene muchos más.
+
 
 adm:x:4:syslog,briyit
 Significa:
@@ -71,7 +76,7 @@ syslog,briyit → usuarios que pertenecen a ese grupo
 
 
 
-En el desarollo de nuestro plan de aprendizaje mas adelante se desarrolla este punto a mas profundidad y claridad.
+**En el desarollo de nuestro plan de aprendizaje mas adelante se desarrolla este punto a mas profundidad y claridad.**
 
 
 ## 3. Crear un directorio y un archivo
@@ -86,7 +91,7 @@ creamos  en practica una documento con nombre nota.txt
 
 ls practica/nota.txt verificamos si se creo correctamente
 
-imagen
+![touch](imagenes/touch_note.png)
 
 ---
 ## 4. Ver permisos
@@ -95,7 +100,7 @@ imagen
 ls -l practica
 ```
 
-Nos muestra que tienen permisos de read y write el usuario el grupo y otros solo read
+Nos muestra que tienen permisos de read y write el usuario el grupo y otros solo read.
 
 
 ## 5. Cambiar permisos básicos
@@ -104,9 +109,10 @@ Nos muestra que tienen permisos de read y write el usuario el grupo y otros solo
 chmod 644 practica/nota.txt  
 ```
 
-con los permisos que fueron asignados en 644 al usuario se le quito x lo que implica que no tiene acceso de ejecución, como resultado no puede acceder a ejecutar el archivo.
+![chmod 644 ](imagenes/chmod%20664.png)
 
-imagen 
+con los permisos que fueron asignados en 644 al usuario se le quito x lo que implica que no tiene acceso de ejecución.
+
 
 ---
 
@@ -123,7 +129,7 @@ chmod 755 practica/nota.txt
 ls -l practica
 ```
 
-imagen
+![chmod 644 ](imagenes/chmod%20755_resultado%20final.png)
 
 
 
