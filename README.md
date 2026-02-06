@@ -21,7 +21,7 @@ problemas que he resuelto en mi entorno Linux mientras estudio de forma autodida
 - **Comandos esenciales**  
   Explicaciones y ejemplos de uso de los comandos más utilizados en administración Linux.
 
-  [Comandos_esenciales](Comandos%20esenciales&20de%20Linux.md)
+  [Comandos_esenciales](Comandos%20esenciales%20de%20Linux.md)
 
 - **Usuarios y grupos**  
   Gestión de cuentas, permisos, sudoers y buenas prácticas.
