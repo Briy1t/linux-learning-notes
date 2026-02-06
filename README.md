@@ -13,10 +13,24 @@ problemas que he resuelto en mi entorno Linux mientras estudio de forma autodida
   ## Bloque 1 :
   **Temas**
   
-  **Fundamentos**
-  Fundamentos esenciales de GNU/Linux: arquitectura interna, diferencia entre kernel y espacio de usuario, módulos del kernel, proceso completo de arranque (BIOS/UEFI → GRUB → kernel → systemd → servicios → login    → shell) y conceptos clave como terminal, shell y servicios del sistema. Incluye comandos básicos para inspeccionar kernel, módulos y systemd.
+  **1. Fundamentos**
+  Fundamentos esenciales de GNU/Linux: arquitectura interna, diferencia entre kernel y espacio de usuario, módulos del kernel,   proceso completo de arranque (BIOS/UEFI → GRUB → kernel → systemd → servicios → login    → shell) y conceptos clave como       terminal, shell y servicios del sistema. Incluye comandos básicos para inspeccionar kernel, módulos y systemd.
 
   [Fundamentos](Bloque1_Fundamentos_Sistema.md)
+
+  **2. Jerarquia del sistema (FHS)**
+  - Función de las carpetas principales (/, /home, /etc, /var, /usr, /bin, /sbin, /tmp, /dev, /proc, /sys).
+  - Árbol visual de la estructura.
+  - Tabla rápida de cada directorio.
+  - Mini laboratorio usando ls /usr.
+
+  [jerarquia_FHS](tema_2_Jerarquía_del_Sistema_Archivos_(FHS).md)
+
+  **3. Sistema de archivos en Linux**
+  Este tema presenta los principales sistemas de archivos usados en Linux:
+  ext4, XFS, Btrfs, tmpfs, procfs, sysfs
+  
+  [Sistema de archivos en Linux](Tema3:tipos_sistemas_de_archivos_en_linux.md)
 
   ## Bloque 2 :
 
