@@ -11,6 +11,12 @@ problemas que he resuelto en mi entorno Linux mientras estudio de forma autodida
 ## Contenido del repositorio
 
   ## Bloque 1 :
+  **Temas**
+  
+  **Fundamentos**
+  Fundamentos esenciales de GNU/Linux: arquitectura interna, diferencia entre kernel y espacio de usuario, módulos del kernel, proceso completo de arranque (BIOS/UEFI → GRUB → kernel → systemd → servicios → login    → shell) y conceptos clave como terminal, shell y servicios del sistema. Incluye comandos básicos para inspeccionar kernel, módulos y systemd.
+
+  [Fundamentos](Bloque1_Fundamentos_Sistema.md)
 
   ## Bloque 2 :
 
