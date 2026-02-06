@@ -10,11 +10,24 @@ problemas que he resuelto en mi entorno Linux mientras estudio de forma autodida
 
 ## Contenido del repositorio
 
+  ## Bloque 1 :
+
+  ## Bloque 2 :
+
+
+
+  **Otros**
+
 - **Comandos esenciales**  
   Explicaciones y ejemplos de uso de los comandos más utilizados en administración Linux.
 
+  [Comandos_esenciales](Comandos%20esenciales&20de%20Linux.md)
+
 - **Usuarios y grupos**  
   Gestión de cuentas, permisos, sudoers y buenas prácticas.
+
+  [Usuarios_Grupos]( Usuarios_Grupos_Linux.md)
+  [Administracion_usuarios_grupo](administracion_basica_usuarios.md)
 
 - **Permisos y ownership**  
   Notas sobre `chmod`, `chown`, `umask`, ACLs y casos reales.
