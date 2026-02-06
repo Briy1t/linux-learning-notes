@@ -26,8 +26,8 @@ problemas que he resuelto en mi entorno Linux mientras estudio de forma autodida
 - **Usuarios y grupos**  
   Gestión de cuentas, permisos, sudoers y buenas prácticas.
 
-  [Usuarios_Grupos]( Usuarios_Grupos_Linux.md)
-  [Administracion_usuarios_grupo](administracion_basica_usuarios.md)
+  - [Usuarios_Grupos]( Usuarios_Grupos_Linux.md)
+  - [Administracion_usuarios_grupo](administracion_basica_usuarios.md)
 
 - **Permisos y ownership**  
   Notas sobre `chmod`, `chown`, `umask`, ACLs y casos reales.
