@@ -30,7 +30,7 @@ problemas que he resuelto en mi entorno Linux mientras estudio de forma autodida
   Este tema presenta los principales sistemas de archivos usados en Linux:
   ext4, XFS, Btrfs, tmpfs, procfs, sysfs
   
-  [Sistema de archivos en Linux](Tema3:tipos_sistemas_de_archivos_en_linux.md)
+  [Sistema de archivos en Linux](Tema3_tipos_sistemas_de_archivos_en_linux.md)
 
   ## Bloque 2 :
 
