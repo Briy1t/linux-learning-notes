@@ -32,6 +32,11 @@ problemas que he resuelto en mi entorno Linux mientras estudio de forma autodida
   
   [Sistema de archivos en Linux](Tema3_tipos_sistemas_de_archivos_en_linux.md)
 
+  **4. Rutas, Navegación y PATH**
+  Explicación de rutas absolutas y relativas en Linux, cómo el sistema encuentra los comandos mediante la variable PATH y el     orden de búsqueda (comandos internos, alias, ./, directorios del PATH). Incluye el concepto de ./, el uso del shebang          (#!/bin/bash, etc.), cómo convertir un script en comando del sistema y buenas prácticas para organizar scripts en              directorios como /usr/local/bin y ~/bin.
+
+  [Rutas, Navegación y PATH](tema4_Rutas_Navegación_y_PATH.md)
+
   ## Bloque 2 :
 
 
