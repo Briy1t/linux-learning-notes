@@ -8,145 +8,120 @@ Demostrar dominio de:
 -Gestión de permisos
 -Navegación en el sistema
 -Comandos administrativos
-
-## Resolución de errores reales
+- Resolución de errores reales
 
 ## Preparación del entorno
 Abrimos la terminal:
----
-bash
-Ctrl + Alt + T
-Verificamos el usuario actual:
----
-bash
-whoami
-Cambiamos al usuario destinado para ejercicios:
----
-bash
-su - ejercicios
-Verificamos que el cambio fue exitoso:
----
 
-bash
-whoami
-[Aquí puedes insertar tu primera imagen]
+---
+1. Accedemos a la terminal con:
+`Ctrl + Alt + T`
+2. Verificamos el usuario actual:
+`pwd`
+3,Cambiamos al usuario destinado para ejercicios:
+`su - ejercicios`
+4.Verificamos que el cambio fue exitoso:
+`pwd`
 
 ## Creación del grupo devteam
+
 Creamos el grupo solicitado:
 
-bash
-sudo groupadd devteam
-Verificamos que el grupo existe:
+5.`sudo groupadd devteam`
+nos pide asignar una clave 
 
-bash
-getent group devteam
-[Imagen opcional aquí]
 
 ### Creación del usuario ana
 Creamos el usuario:
+El usuario ana ya esta creado en un ejercicio anterior, por eso creamos el usuario luis
+6. `sudo useradd -m luis
+7. Agregamos los usuarios al grupo con 
+`sudo usermod -aG ventas nombre_del_usuario
 
-bash
-sudo useradd ana
-Asignamos contraseña:
+![Asignacion de usuarios al grupo ventas ](imagenes/asignacion_grupo_a_usuarios.png)
 
-bash
-sudo passwd ana
-Verificamos si tiene carpeta personal:
----
-bash
-ls -ld /home/ana
- Error detectado: usuario sin carpeta personal
-El usuario fue creado sin la opción -m, por lo que no se generó /home/ana.
+8. Creamos la carpeta proyectos con una subcarpeta ventas2026:
+`mkdir -p /proyectos/ventas2026`
+lo que nos genera un Permission deny 
 
-### Corrección del error: crear la carpeta personal
-Creamos manualmente la carpeta:
+`sudo mkdir -p /proyectos/ventas2026`
+debemos recordar usar sudo.
 
-bash
-sudo mkdir /home/ana
-sudo chown ana:ana /home/ana
-Verificamos:
+## Asignacion de permisos
+asignamos el permiso  SGID (Set Group ID): se usa en directorios compartidos, todos los archivos nuevos creados dentro heredan el grupo del directorio, no el grupo principal del usuario creador.
 
-bash
-ls -ld /home/ana
-[Imagen opcional aquí]
+9.`sudo chmod g+s /Proyectos/ventas2026`
 
-## Añadir el usuario al grupo devteam
-bash
-sudo usermod -aG devteam ana
-Verificamos:
+procedemos a listar , se cometieron direfentes errores como añadir una s en proyectos, se considero que quizas necesitaria el comando sudo 
 
-bash
-id ana
-getent group devteam
-[Imagen opcional aquí]
+![Errores_listando](imagenes/errores_listado.png)
 
-## Crear archivo compartido en /opt
-Creamos el archivo:
+10. Listamos con el comando 
+`ls -ld /proyectos/ventas2026`
+l : lista larga.
+d: Lista los directorios por su nombre, no su contenido.
 
-bash
-sudo touch /opt/devteam_notes.txt
-Verificamos propietario y permisos:
+![listado_comprobacion_permiso_sgid](imagenes/listado_permiso_g+s.png)
 
-bash
-ls -l /opt/devteam_notes.txt
-## Asignar propietario y grupo correctos
-bash
-sudo chown root:devteam /opt/devteam_notes.txt
-Asignamos permisos 660:
+en la imagen apreciamos que se asigno el permiso correctamente `sr`
 
-bash
-sudo chmod 660 /opt/devteam_notes.txt
-Verificamos:
+10.**Sticky Bit** permiso que se aplica a directorios para restringir la eliminacion de archivos.
 
-bash
-ls -l /opt/devteam_notes.txt
-Resultado esperado:
+`sudo chmod +t /proyecto/ventas2026`
 
-Código
--rw-rw---- 1 root devteam ...
-[Imagen opcional aquí]
+analizamos los permisos otorgadors y notamos que otros tenia permisos de lectura
 
-## Probar acceso como ana
-Entramos como el usuario:
+- procedemos hacer un cambio con:
+`sudo chmod 770 /proyecto/ventas2026`
 
-bash
-sudo -u ana -i
-Intentamos escribir en el archivo:
+volvemos a combrobar con: `ls -ld /proyectos/ventas2026`
 
-bash
-echo "texto de prueba" >> /opt/devteam_notes.txt
-Leemos el archivo:
+![cambio_de_permisos](imagenes/cambio_de_permisos.png)
 
-bash
-cat /opt/devteam_notes.txt
-Si aparece el texto, el ejercicio está completado correctamente.
+como podemos notar en la imagen los permisos fuero cambiados correctamente mas el **Sticky Bit** desaparecio.
 
-[Imagen opcional aquí]
+" Importante primero analizar los permisos del archivo para hay si aplicar los permisso especiales. "
 
-## Comandos nuevos aprendidos
+asignamos nuevamente el permiso :
+`sudo chmod +t /proyecto/ventas2026`
+comprobamos:
+`ls -ld /proyectos/ventas2026`
 
-echo
-Escribe texto en pantalla o en archivos.
+![permisos_correctos](imagenes/permisos_correctos.png)
 
-bash
-echo "Hola mundo"
-echo "texto" >> archivo.txt
----
-cat
-Muestra el contenido de un archivo.
+## Creacion de carpeta
 
-bash
-cat archivo.txt
-Resultado final
-El usuario ana existe
----
-Su carpeta personal /home/ana está creada y asignada correctamente
+creamos un archivo: `sudo touch /proyecto/ventas2026/actualizar.sh`
+Comprobamos con :`sudo ls -ld /proyecto/ventas2026/actualizar.sh`
 
-El grupo devteam existe
+![touch_actualizar.sh](imagenes/touch_actualizar.sh.png)
 
-El archivo /opt/devteam_notes.txt pertenece a root:devteam
+### permisos del archivo
+En este archivo vamos asignar permisos para que el usuario  ejecutar, leer, escribir pero los otros no y los del grupo puedan tener los permisso justos.
 
-Tiene permisos 660
+`sudo chmod 750  /proyecto/ventas2026/actualizar.sh`
 
-El usuario ana puede escribir en él
+![Permiso_archivo](imagenes/permiso_archivo.png)
+
+comprobamos 
+`sudo ls -ld /proyecto/ventas2026/actualizar.sh`
+
+## Escribir en el archivo creado 
+
+`sudo nano /proyecto/ventas2026/actualizar.sh`
+
+- llamamos al interprete con: `#!/bin/bash`
+- con `echo ` escribimos en el: `echo "Mision cumplida"`
+
+![Conetenido_actualizacion.sh](imagenes/contenido_actualizacion.sh.png)
+
+Una vez que salgas de Nano (Ctrl+O, Enter, Ctrl+X)
+
+- con `sudo /proyecto/ventas2026/actualizar.sh`, lo ejecutamos 
+
+![Comprobacion_actualizacion.sh](imagenes/comprobacion_actualizacion.sh.png)
+
+
+
+
 
