@@ -13,12 +13,12 @@ problemas que he resuelto en mi entorno Linux mientras estudio de forma autodida
   ## Bloque 1 :
   **Temas**
   
-  **1. Fundamentos**
+  **1. Fundamentos :**
   Fundamentos esenciales de GNU/Linux: arquitectura interna, diferencia entre kernel y espacio de usuario, módulos del kernel,   proceso completo de arranque (BIOS/UEFI → GRUB → kernel → systemd → servicios → login    → shell) y conceptos clave como       terminal, shell y servicios del sistema. Incluye comandos básicos para inspeccionar kernel, módulos y systemd.
 
   [Fundamentos](Bloque1_Fundamentos_Sistema.md)
 
-  **2. Jerarquia del sistema (FHS)**
+  **2. Jerarquia del sistema (FHS) :**
   - Función de las carpetas principales (/, /home, /etc, /var, /usr, /bin, /sbin, /tmp, /dev, /proc, /sys).
   - Árbol visual de la estructura.
   - Tabla rápida de cada directorio.
@@ -26,16 +26,21 @@ problemas que he resuelto en mi entorno Linux mientras estudio de forma autodida
 
   [jerarquia_FHS](tema_2_Jerarquía_del_Sistema_Archivos_(FHS).md)
 
-  **3. Sistema de archivos en Linux**
+  **3. Sistema de archivos en Linux :**
   Este tema presenta los principales sistemas de archivos usados en Linux:
   ext4, XFS, Btrfs, tmpfs, procfs, sysfs
   
   [Sistema de archivos en Linux](Tema3_tipos_sistemas_de_archivos_en_linux.md)
 
-  **4. Rutas, Navegación y PATH**
-  Explicación de rutas absolutas y relativas en Linux, cómo el sistema encuentra los comandos mediante la variable PATH y el     orden de búsqueda (comandos internos, alias, ./, directorios del PATH). Incluye el concepto de ./, el uso del shebang          (#!/bin/bash, etc.), cómo convertir un script en comando del sistema y buenas prácticas para organizar scripts en              directorios como /usr/local/bin y ~/bin.
+  **4. Rutas, Navegación y PATH :**
+  Explicación de rutas absolutas y relativas en Linux, cómo el sistema encuentra los comandos       mediante la variable PATH y el     orden de búsqueda (comandos internos, alias, ./, directorios   del PATH). Incluye el concepto de ./, el uso del shebang          (#!/bin/bash, etc.), cómo       convertir un script en comando del sistema y buenas prácticas para organizar scripts en           directorios como /usr/local/bin y ~/bin.
 
   [Rutas, Navegación y PATH](tema4_Rutas_Navegación_y_PATH.md)
+
+  **5. Comandos esenciales :**
+  reúne los comandos esenciales de Linux para trabajar con el sistema: navegación con pwd, cd y     ls; gestión de archivos mediante mkdir, touch, cp, mv y rm; lectura con cat, head, tail y less;   búsqueda con grep y sus opciones; y el uso de redirecciones y pipes para controlar el flujo de    datos. Incluye comandos de filtrado como wc, sort y uniq, además de expresiones regulares         básicas con grep -E para búsquedas más potentes. También incorpora ejercicios prácticos para      aplicar todo lo aprendido de forma progresiva.
+
+  [Comandos esenciales](Tema_5_Comandos_esenciales.md)
 
   ## Bloque 2 :
 
