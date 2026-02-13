@@ -38,17 +38,26 @@ problemas que he resuelto en mi entorno Linux mientras estudio de forma autodida
   [Rutas, Navegación y PATH](tema4_Rutas_Navegación_y_PATH.md)
 
   **5. Comandos esenciales :**
-  reúne los comandos esenciales de Linux para trabajar con el sistema: navegación con pwd, cd y     ls; gestión de archivos mediante mkdir, touch, cp, mv y rm; lectura con cat, head, tail y less;   búsqueda con grep y sus opciones; y el uso de redirecciones y pipes para controlar el flujo de    datos. Incluye comandos de filtrado como wc, sort y uniq, además de expresiones regulares         básicas con grep -E para búsquedas más potentes. También incorpora ejercicios prácticos para      aplicar todo lo aprendido de forma progresiva.
-
-  [Comandos esenciales](Tema_5_Comandos_esenciales.md)
+  reúne los comandos esenciales de Linux para trabajar con el sistema: navegación con pwd, cd y ls; gestión de archivos mediante mkdir, touch, cp, mv y rm; lectura con cat, head, tail y less; búsqueda con           grep y sus opciones; y el uso de redirecciones y pipes para controlar el flujo de datos. Incluye comandos de filtrado como wc, sort y uniq, además de expresiones regulares básicas con grep -E para                 búsquedas más potentes. También incorpora ejercicios prácticos para aplicar todo lo aprendido de forma progresiva.
+  - Lo vamos a dividir así:
+       1. Comandos de navegación
+       2.  Comandos de archivos y directorios
+       3.  Comandos de lectura de archivos
+       4.  Comandos de búsqueda
+       5.  Redirecciones y pipes  / 5.1 Comandos de filtrado y ordenación
+       6.  Expresiones regulares (regex)
+            
+- aqui temas 1, 2 ,3  →[Comandos esenciales 1 2 3 ](Tema_5_Comandos_esenciales_1,2,3.md)
+- aqui temas 4, 5 ,6  →[Comandos esenciales 4 5 6 ](TTema_5_Comandos_esenciales_4_5_6.md)
+        
 
   ## Bloque 2 :
 
 
 
-  **Otros**
+ -  **Otros**
 
-- **Comandos esenciales**  
+- - **Comandos esenciales lista general**  
   Explicaciones y ejemplos de uso de los comandos más utilizados en administración Linux.
 
   [Comandos_esenciales](Comandos%20esenciales%20de%20Linux.md)
