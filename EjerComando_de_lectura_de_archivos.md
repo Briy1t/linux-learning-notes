@@ -1,10 +1,10 @@
-Ejercicio: Lectura y exploración de archivos en Linux
- Imagina que estás trabajando en un servidor y tienes los siguientes archivos dentro del directorio /var/logs/app/:
+# Ejercicio: Lectura y exploración de archivos en Linux
+Imagina que estás trabajando en un servidor y tienes los siguientes archivos dentro del directorio /var/logs/app/:
   - inicio.log (archivo pequeño con 15 líneas)
   - errores.log (archivo muy grande que crece constantemente)
   - config.txt (archivo de configuración con 50 líneas)
   - registro_hoy.log (archivo que se actualiza en tiempo real)
-Realiza las siguientes tareas usando únicamente los comandos:
+- Comandos de la unidad a practicar:
   cat, head, tail, less, tail -f.
 
 Tareas:
