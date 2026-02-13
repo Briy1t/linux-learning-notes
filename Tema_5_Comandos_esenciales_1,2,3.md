@@ -212,7 +212,8 @@ Tareas:
   - Monitorea en tiempo real el archivo registro_hoy.log para ver si aparecen nuevas entradas.
   - Muestra el contenido completo de inicio.log de una sola vez, ya que es un archivo pequeño.
   - Consulta las últimas 20 líneas de errores.log sin abrirlo en un visor.
-- Ejercicio practico solucion:[Ejercicio comando de lectura de archivos](EjerComando_de_lectura_de_archivos.md)
+### solucion
+[Ejercicio comando de lectura de archivos](EjerComando_de_lectura_de_archivos.md)
 
     
 
