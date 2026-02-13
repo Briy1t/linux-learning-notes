@@ -4,10 +4,6 @@ Lo vamos a dividir así:
 1. Comandos de navegación
 2. Comandos de archivos y directorios
 3. Comandos de lectura de archivos
-4. Comandos de búsqueda
-5. Redirecciones y pipes
-   5.1 Comandos de filtrado y ordenación
-6. Ejercicios prácticos
 
 ## 1. Comandos de navegación
 
@@ -199,87 +195,28 @@ Por defecto, muestra las primeras 10 líneas.
       Para salir del modo en vivo:
         -Presiona Ctrl + C
 
-  ### Ejercicio comando de lectura de archivos
+### Ejercicio practico — 3 Lectura y exploración de archivos en Linux
+ Imagina que estás trabajando en un servidor y tienes los siguientes archivos dentro del directorio /var/logs/app/:
+  - inicio.log (archivo pequeño con 15 líneas)
+  - errores.log (archivo muy grande que crece constantemente)
+  - config.txt (archivo de configuración con 50 líneas)
+  - registro_hoy.log (archivo que se actualiza en tiempo real)
+- Comandos de la unidad a practicar:
+  cat, head, tail, less, tail -f.
 
-## 4 Comandos de búsqueda
+Tareas:
+  - Comprueba rápidamente si el archivo inicio.log contiene la palabra “OK” en sus primeras líneas.
+  - Visualiza solo las primeras 5 líneas del archivo config.txt.
+  - Abre el archivo config.txt para navegarlo página por página y buscar dentro la palabra “timeout”.
+  - Revisa únicamente las últimas 10 líneas del archivo errores.log sin mostrarlo completo.
+  - Monitorea en tiempo real el archivo registro_hoy.log para ver si aparecen nuevas entradas.
+  - Muestra el contenido completo de inicio.log de una sola vez, ya que es un archivo pequeño.
+  - Consulta las últimas 20 líneas de errores.log sin abrirlo en un visor.
+- Ejercicio practico solucion:[Ejercicio comando de lectura de archivos](EjerComando_de_lectura_de_archivos.md)
 
-- `grep` Busca una palabra o frase dentro de un archivo y muestra solo las líneas que coinciden.
-`grep "PALABRA" archivo`
+    
 
-  - Esto es extremadamente útil para:
-  - Encontrar fallos
-  - Buscar usuarios
-  - Buscar configuraciones
-  - Filtrar logs
-  - Analizar archivos grandes
 
-1. Búsqueda sin distinguir mayúsculas/minúsculas
-`grep -i "error" archivo`
-Esto encuentra:ERROR, Error, error, eRrOr.
-2. Mostrar números de línea
-`grep -n "ERROR" archivo`
-Te dice en qué línea aparece cada coincidencia.
-3. Buscar en varios archivos a la vez
-`grep "ERROR" *.log`
-Busca en todos los archivos que terminen en .log.
-4. Buscar dentro de carpetas completas (recursivo)
-`grep -r "ERROR" /ruta/carpeta`
-Busca en todos los archivos dentro de esa carpeta y subcarpetas.
-5. Contar cuántas coincidencias hay
-`grep -c "ERROR" archivo`
-Te dice cuántas veces aparece la palabra.
-6. Muestra todo menos las líneas con “ERROR”.
-`grep -v "ERROR" sistema.log`
-
-|Opción |Significado|
-|:--|:--|
-|-i |Ignorar mayúsculas/minúsculas|
-|-n |Mostrar número de línea|
-|-c |Contar coincidencias|
-|-r |Búsqueda recursiva en carpetas|
-|-v |Mostrar todo excepto lo que se busca|
-
-## 5. Redirecciones y pipes
-
-**Redirecciones**
-- `> `sobrescribe un archivo con la salida de un comando.
-
-- `>> `añade contenido al final sin borrar lo anterior.
-
-- `< `usa un archivo como entrada para un comando.
-
-**Pipes (|)**
-Conectan comandos: la salida del primero pasa a ser la entrada del siguiente.
-
-**Ejemplos típicos:**
-- Filtrar: cat archivo | grep "texto"
-- Contar resultados: grep "ERROR" log | wc -l
-- Ordenar: grep "OK" log | sort
-- Quitar duplicados: sort archivo | uniq
-
-### 5.1 Comandos de filtrado y ordenación
-
-1. `wc` :Cuenta líneas, palabras o caracteres.
-`wc archivo`
-- `wc -l` : olo líneas
-- `wc -w `:solo palabras
-- `wc -c` :solo caracteres
-Muy útil con pipes: `grep "ERROR" log | wc -l`
-
-2.`sort`:Ordena líneas.
-orden alfabético
-
-- `sort -n` orden numérico
-- `sort -f` ignora mayúsculas
-- `sort -k` 2 ordena por columna 2
-Combinado con pipes: `cat usuarios | sort`
-
-3. `uniq`:Elimina duplicados consecutivos.
-limpia duplicados seguidos
-
-- `uniq -d` muestra solo los duplicados
-- `uniq -c` muestra cuántas veces aparece cada línea
-Normalmente se usa con sort:`sort archivo | uniq`
 
 
 
