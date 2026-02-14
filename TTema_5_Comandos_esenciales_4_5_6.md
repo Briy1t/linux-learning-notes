@@ -177,7 +177,7 @@ Guion -
 
 ### Ejercicio 1 — Análisis de logs con grep y regex
 En una carpeta llamada logs/ tienes los siguientes archivos:
-- app.log
+- inicio.log
 - errores.log
 - accesos.log
 Cada archivo contiene líneas con distintos formatos, incluyendo:
@@ -187,10 +187,10 @@ Cada archivo contiene líneas con distintos formatos, incluyendo:
 - Direcciones IP
 Realiza las siguientes tareas:
 - Muestra únicamente las líneas que empiezan por ERROR en errores.log.
-- Obtén todas las líneas que terminan en .txt dentro de app.log.
+- Obtén todas las líneas que terminan en denegado dentro de inicio.log.
 - Busca en accesos.log todas las líneas que contengan una dirección IP válida usando una regex con cuantificadores {1,3}.
-- Filtra todas las líneas que contengan INFO o WARN, usando alternancia | con grep -E.
-- Cuenta cuántas líneas contienen números de 3 dígitos consecutivos.
+- Filtra todas las líneas que contengan INFO o WARN, usando alternancia | con grep -E en inicio.log
+- Cuenta cuántas líneas contienen números de 3 dígitos consecutivos en accesos.log
 
 - [Solución Ejercicio 1](EjerAnálisis_de_logs_grep_y_egex.md)
 
