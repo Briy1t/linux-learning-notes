@@ -54,7 +54,7 @@ problemas que he resuelto en mi entorno Linux mientras estudio de forma autodida
   ## Bloque 2 :
   Administración del Sistema Linux reúne los fundamentos esenciales para trabajar como SysAdmin. Incluye la gestión completa de usuarios, grupos y permisos, desde rwx hasta permisos especiales y ACLs. También abarca el control de procesos y servicios mediante             herramientas como ps, top, systemctl y journalctl. Se profundiza en la instalación y mantenimiento de software, redes básicas, configuración de interfaces, firewall y diagnóstico. Además, se estudia el almacenamiento: particiones, sistemas de archivos, montajes y       LVM. Finalmente, se trabaja con logs del sistema y monitorización básica para detectar errores, analizar eventos y mantener la estabilidad del sistema. Estara dividido en temas.
   
-  **1 Usuarios, Grupos y Permisos en Linux**
+  **1. Usuarios, Grupos y Permisos en Linux**:
   Introduce la gestión de usuarios, grupos y permisos en Linux. Explica archivos clave del sistema, comandos para administrar identidades, permisos básicos y avanzados, propietarios, grupos y permisos especiales como SUID, SGID y Sticky Bit. También incluye ACLs y        conceptos de sudoers para controlar privilegios de forma granular.
   
    - aqui tema 1  →[Usuarios, Grupos y Permisos en Linux](Bloque_2_tema_1_usuarios_grupos_permisos.md)
