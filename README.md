@@ -57,7 +57,7 @@ problemas que he resuelto en mi entorno Linux mientras estudio de forma autodida
   **1. Usuarios, Grupos y Permisos en Linux**:
   Introduce la gestión de usuarios, grupos y permisos en Linux. Explica archivos clave del sistema, comandos para administrar identidades, permisos básicos y avanzados, propietarios, grupos y permisos especiales como SUID, SGID y Sticky Bit. También incluye ACLs y        conceptos de sudoers para controlar privilegios de forma granular.
   
-   - aqui tema 1  [Usuarios, Grupos y Permisos en Linux](Bloque_2_tema_1_usuarios_grupos_permisos.md)
+  [Usuarios, Grupos y Permisos en Linux](Bloque_2_tema_1_usuarios_grupos_permisos.md)
 
   
   
