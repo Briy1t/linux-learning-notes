@@ -147,7 +147,7 @@ Permiso	Valor
 - w	2
 - x	1
 
-- Ejercicio administracion de sitema: [Administracion_usuarios_grupo](administracion_basica_usuarios.md
+- Ejercicio administracion del sistema: [Administracion_usuarios_grupo](administracion_basica_usuarios.md)
 
 ###  Cambiar propietario — chown
 - `sudo chown usuario archivo`
