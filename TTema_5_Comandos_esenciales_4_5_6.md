@@ -230,11 +230,8 @@ Realiza las siguientes tareas:
 - Extrae todas las líneas que contengan códigos alfanuméricos de 5 caracteres, usando [A-Za-z0-9]{5}.
 - Muestra solo las líneas cuyo mensaje sea INFO, WARN o ERROR, usando grupos ( ) y alternancia |.
 - Filtra las líneas que empiezan por una fecha válida usando:^[0-9]{4}-[0-9]{2}-[0-9]{2}
-Obtén todas las líneas donde el usuario sea root o admin, usando:
+Obtén todas las líneas donde el usuario sea root o admin, usando:(root|admin)
 
-```text
-Usuario: (root|admin)
-Muestra únicamente las líneas que no contienen números, usando grep -vE.
 ```
 
 - [Solución Ejercicio 3](Ejer3Regex_avanzadas_con_ERE.md)
