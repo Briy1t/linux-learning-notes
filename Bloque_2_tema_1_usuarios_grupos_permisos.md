@@ -28,6 +28,7 @@ Un grupo es un conjunto de usuarios que comparten permisos.Ejemplos típicos:
 - docker
 - usuarios que pueden usar Docker sin sudo
 ---
+- Ejercicio practico: [Usuarios_Grupos]( Usuarios_Grupos_Linux.md)
 ## 3. Archivos importantes del sistema
 - `/etc/passwd `— Información de usuarios
 
@@ -145,6 +146,8 @@ Permiso	Valor
 - r	4
 - w	2
 - x	1
+
+- Ejercicio administracion de sitema: [Administracion_usuarios_grupo](administracion_basica_usuarios.md
 
 ###  Cambiar propietario — chown
 - `sudo chown usuario archivo`
