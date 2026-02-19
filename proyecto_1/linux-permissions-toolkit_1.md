@@ -46,7 +46,7 @@ echo "USER $USER created and added to linuxteam."
 
 ## Evidencias 
 
-![Script_user+group](images/script_add,save_NEWusers.png)
+![Script_user+group](proyecto_1/imagenes_proyecto1/script_add,save_NEWusers.png)
 
 ----------------------------------
 
@@ -54,7 +54,7 @@ echo "USER $USER created and added to linuxteam."
 
 ### Evidencias 
 
-![Creacion_directorio l](images/linux_permi_creacion_de_directorio.png)
+![Creacion_directorio l](proyecto_1/imagenes_proyecto1/linux_permi_creacion_de_directorio.png)
 
 ------------------------------
 
@@ -76,7 +76,7 @@ Reiniciar la máquina virtua
 
 ### Evidencias 
 
-![Incidencia de teclado](images/incidencia_con_el_teclado.png)
+![Incidencia de teclado](proyecto_1/imagenes_proyecto1/incidencia_con_el_teclado.png)
 
 
 
@@ -104,7 +104,7 @@ El usuario actual no tiene permisos de lectura ni ejecución
 
 ### Evidencia 
 
-![Error de permisos](images/incidencia_denied.png)
+![Error de permisos](proyecto_1/imagenes_proyecto1/incidencia_denied.png)
 
 -------------------
 
