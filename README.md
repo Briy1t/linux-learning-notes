@@ -96,10 +96,5 @@ y consolidar conocimientos de cara a la certificación **Linux+**.
 
 ---
 
-## Sobre mí
-
-Soy Briyit, estudiante de administración de sistemas, scripting y cloud computing.  
-Este repositorio refleja mi progreso real, mis prácticas y mi camino hacia la certificación Linux+.
-
 # linux-learning-notes
 Repositorio de estudio con comandos, notas y ejercicios para la certificación Linux+.
