@@ -16,8 +16,8 @@ problemas que he resuelto en mi entorno Linux mientras estudio de forma autodida
   **1. Fundamentos :**
   Fundamentos esenciales de GNU/Linux: arquitectura interna, diferencia entre kernel y espacio de usuario, módulos del kernel,   proceso completo de arranque (BIOS/UEFI → GRUB → kernel → systemd → servicios → login    → shell) y conceptos clave como       terminal,       shell y servicios del sistema. Incluye comandos básicos para inspeccionar kernel, módulos y systemd.
 
-  [Fundamentos](Bloque1_Fundamentos_Sistema.md)
-  [Interfaz](Interfaz.md)
+  - [Fundamentos](Bloque1_Fundamentos_Sistema.md)
+  - [Interfaz](Interfaz.md)
 
   **2. Jerarquia del sistema (FHS) :**
   - Función de las carpetas principales (/, /home, /etc, /var, /usr, /bin, /sbin, /tmp, /dev, /proc, /sys).
