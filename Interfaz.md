@@ -12,17 +12,19 @@ Es lo que no ves en la terminal
 - Cinnamon (Linux Mint)
 
 ## 1. Elementos
-1. **Escritorio**:Es el fondo donde puedes
+1. **Escritorio**:es el fondo donde puedes
 - poner archivos
 - poner accesos directos
 - cambiar el fondo de pantalla
-  1.1 **Barra superior o inferior**:Depende del escritorio, pero normalmente incluye
-    - hora
-    - red
-    - volumen
-    - batería
-    - menú de aplicaciones
-2**Menú de aplicaciones**:Es como el “Inicio” de Windows.Desde aquí abres
+
+1.1.**Barra superior o inferior**:depende del escritorio, pero normalmente incluye
+   - hora
+   - red
+   - volumen
+   - batería
+   - menú de aplicaciones
+      
+2. **Menú de aplicaciones**:es como el “Inicio” de Windows.Desde aquí abres
 - navegador
 - terminal
 - archivos
