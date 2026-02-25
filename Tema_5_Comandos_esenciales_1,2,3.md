@@ -139,7 +139,7 @@ y documentacion de incidencias.
 
 
 
-## 3 Comandos de lectura de archivos
+## 3 Comandos de lectura y escritura de archivos
 
 - `cat` muestra todo el contenido del archivo en la terminal, de arriba a abajo.
 Tener presente que este se usa para archivos muy cortos, si se quiere leer rapido, 
@@ -215,7 +215,53 @@ Tareas:
 ### solucion
 [Ejercicio comando de lectura de archivos](EjerComando_de_lectura_de_archivos.md)
 
-    
+### Comandos de Escritura     
+1. **NANO**
+- El editor más sencillo
+- El que usan los principiantes
+- El más rápido para editar archivos de configuración
+- Cuando abres nano, verás:
+- El contenido del archivo
+
+##### lista de atajos
+
+Los atajos más importantes:
+- `Ctrl + O` → guardar
+- `Ctrl + X` → salir
+- `Ctrl + K` → cortar línea
+- `Ctrl + U` → pegar
+- `Ctrl + W` → buscar texto
+---
+Nano es perfecto para:
+- editar /etc/passwd
+- editar /etc/hosts
+- editar configuraciones
+- escribir scripts
+---
+2. **VIM**
+- Modo normal → moverte
+- Modo inserción → escribir
+- Modo comando → guardar, salir, buscar
+
+- `i` → entrar en modo inserción
+- `Esc` → salir del modo inserción
+`:w` → guardar
+- `:q`→ salir
+- `:wq` → guardar y salir
+- `dd` → borrar línea
+- `yy` → copiar línea
+- `p` → pegar
+---
+1. ¿Qué editor es más fácil para principiantes?
+- Rta: nano
+2. ¿Qué combinación se usa en nano para guardar?
+- Rta: Ctrl + O 
+3. ¿Qué tecla se usa en vim para empezar a escribir?
+- Rta: i
+4. ¿Qué comando de vim sirve para guardar y salir?
+- Rta: wq
+5. ¿Qué editor usarías para editar un archivo de configuración rápida?
+- Rta: nano
 
 
 
