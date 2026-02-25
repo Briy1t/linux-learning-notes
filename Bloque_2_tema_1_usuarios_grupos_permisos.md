@@ -173,5 +173,13 @@ Permiso	Valor
 - Resultado esperado: drwxr-sr-t
 
  - ![imagen 5](imagenes/im5.png)
+
+| Permiso | Símbolo | Se usa en | ¿Qué hace? |
+|:--|:--|:--|:--|
+|SUID |s (en user) | archivos | Ejecuta con permisos del dueño |
+|SGID |s (en group) | archivos y directorios | Ejecuta con permisos del grupo / hereda grupo |
+|Sticky Bit | t | directorios| Solo el dueño puede borrar sus archivos |
+
+
 ##  ACLs — Permisos avanzados
 
