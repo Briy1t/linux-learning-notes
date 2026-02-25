@@ -18,6 +18,7 @@ problemas que he resuelto en mi entorno Linux mientras estudio de forma autodida
 
   - [Fundamentos](Bloque1_Fundamentos_Sistema.md)
   - [Interfaz](Interfaz.md)
+  - [Sintaxis de los comandos ](Sintaxis_Comandos.md)
 
   **2. Jerarquia del sistema (FHS) :**
   - Función de las carpetas principales (/, /home, /etc, /var, /usr, /bin, /sbin, /tmp, /dev, /proc, /sys).
