@@ -44,7 +44,7 @@ problemas que he resuelto en mi entorno Linux mientras estudio de forma autodida
   
        1. Comandos de navegación
        2.  Comandos de archivos y directorios
-       3.  Comandos de lectura de archivos
+       3.  Comandos de lectura de archivos y Escritura
        4.  Comandos de búsqueda
        5.  Redirecciones y pipes  / 5.1 Comandos de filtrado y ordenación
        6.  Expresiones regulares (regex)
