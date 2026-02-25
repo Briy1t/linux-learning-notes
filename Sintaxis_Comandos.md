@@ -10,9 +10,9 @@ comando  [opciones]  [argumentos]
 Es la acción que quieres ejecutar.
 ---
 **Ejemplo:**
-    - `ls` → listar archivos
-    - `cp` → copiar
-    - `rm` → eliminar
+- `ls` → listar archivos
+- `cp` → copiar
+- `rm` → eliminar
 ---
 ## Opciones (flags)
 Modifican el comportamiento del comando.
@@ -148,9 +148,9 @@ Significa que puedes usar opciones, pero no son obligatorias.
 
 
 ![im3](imagenes/_3.png)
-- [ ] → opcional
-- { } → elegir una opción
-- ... → se puede repetir
+- `[ ]` → opcional
+- `{ }` → elegir una opción
+-` ... `→ se puede repetir
 - MAYÚSCULAS → variable que tú reemplazas
 
 
