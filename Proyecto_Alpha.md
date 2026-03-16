@@ -251,7 +251,7 @@ Ese error "Unit ssh.service could not be found" significa que el servidor SSH no
 - nano monitor_recursos.sh
 - ![i_48](imagenes/i_48.png)
 - ![i_49](imagenes/i_49.png)
-- ![i_50](imagenes/i_50.png) 
+- ![i_50](imagenes/i_50%20.png)
 - correción 
 
 ```Bash
