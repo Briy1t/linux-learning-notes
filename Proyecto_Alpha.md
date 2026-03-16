@@ -1,4 +1,4 @@
-# El Gran Desafío: "Proyecto Alpha"
+# El Gran Desafío: Proyecto Alpha
 **Contexto**: Eres el SysAdmin y debes preparar el servidor para el nuevo "Proyecto Alpha". 
 - Debes crear la estructura, asegurar los permisos, configurar el entorno y verificar el estado del sistema.
 
@@ -188,7 +188,133 @@ parte 2
 
 - ![i_35 ](imagenes/i_35.png)
 
-## Fase 4 
+---
+## Fase 4
 
-pendiente ....
+- con el comando `top `
+- ![i_36](imagenes/i_36.png)
+  - Podemos notar que 
+  - PID: 1403
+  - COMMAND: gnome-shell (aparece como gnome-s+)
+  - %MEM: 8,2%
+### Tener encuenta
+| Columna |	Descripción |
+|%MEM |	Porcentaje de RAM física usada por el proceso.|
+|RES	|Memoria residente real en RAM. Es el dato más fiable.|
+|VIRT	|Memoria virtual total asignada (incluye librerías y archivos).|
+|SHR	|Memoria compartida con otros procesos.|
+
+---
+El proceso packagekitd (identificado como package+ con PID 1024) presenta una carga de CPU del 31,6% debido a una operación de actualización de repositorios o descarga de paquetes del sistema (Ubuntu).
+
+- shif p 
+- ![i_37](imagenes/i_37.png)
+- probe con el comando y me salia que no hay tal  archivo o directorio `ps -eo pid --sort=-%mem | head -n 2 | tail -n 1 > logs/top_proceso.txt`
+- `cd ~ `me dirijo a home ls compruebo que si este el proyecto , como di una ruta relativa supongo que esa es una de las razones de que no lo encontrara el sistema
+- `cd proyecto_alpha `
+- Ingreso nuevamente el comando
+- ![i_38](imagenes/i_38.png)
+- `cat logs/top_proceso.txt` reviza comprobamos
+- ![i_39](imagenes/i_39.png)
+- escribo el comando `systemctl`
+- ![i_40](imagenes/i_40.png)
+- ![i_41](imagenes/i_41.png)
+- salgo presionado la tecla q
+- `sustemctl status ssh` buscamos especificamento ssh
+- ![i_42](imagenes/i_42.png)
+
+---
+Ese error "Unit ssh.service could not be found" significa que el servidor SSH no está instalado en tu máquina virtual. En Ubuntu Desktop, por seguridad, el servidor SSH no viene instalado por defecto.
+
+## Instalacion del paquete ssh
+- `sudo apt update && sudo apt install openssh-server -y`
+- ![i_43](imagenes/i_43.png)
+- `systemctl status ssh ` comprobamos si se instalo
+- ![i_44](imagenes/i_44.png)
+- `sudo sustemctl restart shh` reinicamos ssh
+- ![i_45](imagenes/i_45.png)
+- comprobamos con `systemctl status ssh `
+- tecla q para salir
+
+## Que arranque shh al encender la PC
+- `sudo systemctl enable ssh`
+- ![i_46](imagenes/i_46.png)
+- **Por razones de seguridad es mejor no tenerlo activo**, tener los permisos minimos necesarios 
+- `sudo systemctl stop ssh` deja de escuchar conexiones
+- **no se abra solo al reiniciar**
+- `sudo systemctl disable ssh `desabilitamos 
+- `systemctl status ssh` comprobamos
+- ![i_47](imagenes/i_47.png)
+- "Si se requiere activar nuevamentes usar `sudo systemctl start ssh`"
+
+## Script para automatizar el monitoreo de memoria 
+- nano monitor_recursos.sh
+- ![i_48](imagenes/i_48.png)
+- ![i_49](imagenes/i_49.png)
+- ![i_50](imagenes/i_50.png) 
+- correción 
+
+```Bash
+#!/bin/bash
+
+# 1. Crear la carpeta de logs si no existe
+mkdir -p logs
+
+# 2. Obtener la fecha y hora actual
+FECHA=$(date '+%Y-%m-%d %H:%M:%S')
+
+# 3. Identificar el PID y el nombre del proceso que más RAM consume
+INFO_PROCESO=$(ps -eo pid,comm --sort=-%mem | head -n 2 | tail -n 1)
+
+# 4. Guardar todo en el archivo (añadiendo al final sin borrar lo anterior)
+echo "[$FECHA] Proceso top memoria: $INFO_PROCESO" >> logs/top_proceso.txt
+
+# 5. Mensaje de confirmación en pantalla
+echo "Reporte guardado con éxito en logs/top_proceso.txt"
+```
+- Presiona Ctrl + O y luego Enter.
+- Presiona Ctrl + X.
+- dar permisos para que el script se ejecute
+- `chmod +x monitor_recursos.sh`
+- ./monitor_recursos.shcomrpbacion
+- ![i_51](imagenes/i_51.png)
+- `cat logs/top_proceso.txt` comprobamos
+- ![i_52](imagenes/i_52.png)
+
+---
+- `df -h | grep -w "/"` ver el espacio en la raiz 
+- ![i_53](imagenes/i_53.png)
+- añadiremos este comando a nuestro script
+  
+ ```Bash
+  # 6. Ver el espacio en la raíz
+ESPACIO=$(df -h | grep -w "/" | awk '{print $5}')
+echo "[$FECHA] Espacio ocupado en raíz: $ESPACIO" >> logs/top_proceso.txt
+```
+
+- ![i_54](imagenes/i_54.png)
+- comprobamos `cat logs/top_proceso.txt`
+- ![i_55](imagenes/i_55.png)
+
+- `df -t tmpfs` RAM que se esta ocupando
+- ![i_56](imagenes/i_56.png)
+- `df -t tmpfs --total -h | tail -n 1` cuánta RAM están ocupando todos esos tmpfs juntos
+
+- ![i_57](imagenes/i_57.png)
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
 
