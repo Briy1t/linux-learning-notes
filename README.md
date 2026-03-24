@@ -48,9 +48,11 @@ problemas que he resuelto en mi entorno Linux mientras estudio de forma autodida
        4.  Comandos de búsqueda
        5.  Redirecciones y pipes  / 5.1 Comandos de filtrado y ordenación
        6.  Expresiones regulares (regex)
+       7.  7_comando_Find.md
             
   - aqui temas 1, 2 ,3  [Comandos esenciales 1 2 3 ](Tema_5_Comandos_esenciales_1,2,3.md)
   - aqui temas 4, 5 ,6  [Comandos esenciales 4 5 6 ](TTema_5_Comandos_esenciales_4_5_6.md)
+  - aqui tema 7 [Comandos esenciales 7 ](7_comando_Find.md) 
         
 
   ## Bloque 2 :
