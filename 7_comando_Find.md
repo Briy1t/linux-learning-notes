@@ -117,12 +117,12 @@ find /dev -type c
 - Dispositivos de bloque
 ```bash
 find /dev -type b
+```
 
-### Ejercicio
+### 9. EJERCICIO 
 
 - [Ejercicio comando find](Ejer_find.md)
 
 
-```
 
-### 9. EJERCICIO 
+
