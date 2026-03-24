@@ -1,4 +1,4 @@
-#EJERCICIO PRÁCTICO: Domina el comando find
+# EJERCICIO PRÁCTICO: Domina el comando find
 ## Escenario
 Estás investigando un servidor y necesitas localizar archivos sospechosos.
 Tu misión es construir los comandos find adecuados para cada caso.
