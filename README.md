@@ -68,7 +68,8 @@ problemas que he resuelto en mi entorno Linux mientras estudio de forma autodida
 ## Proyectos 
 Proyectos que unifican conceptos del bloque 1 y 2
 
-- [Proyecto Alpha](Proyecto_Alpha.md): Un proyecto práctico de administración Linux: creación de estructura, usuarios, permisos, scripts, análisis de logs, procesos, servicios y almacenamiento del sistema. 
+- [Proyecto Alpha](Proyecto_Alpha.md): Un proyecto práctico de administración Linux: creación de estructura, usuarios, permisos, scripts, análisis de logs, procesos, servicios y almacenamiento del sistema.
+- [Operación centinela](Operacion_Centinela.md): Proyecto práctico de auditoría Linux: archivos, permisos, usuarios, procesos y seguridad
 
   --- 
    -  **Otros**
