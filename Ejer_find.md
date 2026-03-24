@@ -36,5 +36,3 @@ Tu misión es construir los comandos find adecuados para cada caso.
 --- 
 
 En proceso ...
-
-Debe mostrar también sus permisos
