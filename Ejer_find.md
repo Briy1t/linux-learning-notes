@@ -36,6 +36,5 @@ Tu misión es construir los comandos find adecuados para cada caso.
 --- 
 
 En proceso ...
-Puede estar en cualquier subcarpeta
 
 Debe mostrar también sus permisos
