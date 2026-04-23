@@ -18,7 +18,7 @@ Después lo abrí con el editor:
 nano mibackups.sh
 ```
 
-- !()[imagenes/a1.png]
+- ![](imagenes/a1.png)
   
 ## 3. Contenido inicial del script
 Dentro del archivo escribí el siguiente código:
@@ -41,7 +41,7 @@ cp -rv $ORIGEN/* $DESTINO/
 
 echo "¡Backup completado con éxito!"
 ```
-- !()[imagenes/a2.png]
+- ![](imagenes/a2.png)
 
 Guardé los cambios con Ctrl + O y salí con Ctrl + X.
 
@@ -56,14 +56,14 @@ Y lo ejecuté:
 ```bash
 ./mibackups.sh
 ```
-- !()[imagenes/a3.png]
+- ![](imagenes/a3.png)
 El backup se realizó correctamente, pero apareció un problema importante.
 
 ## 5. Problema detectado: ineficiencia del comando cp
 Aunque el script funcionaba, identifiqué un fallo de diseño:
 
 - El comando funcian pero hay un error en la sintaxis que escribi en la terminal
-- !()[imagenes/a4.png]
+- ![](imagenes/a4.png)
 - El comando cp -rv copia todo cada vez.
 - Si la carpeta pesa 10, 20 o 50 GB, el proceso se repetirá completo siempre.
 - En entornos cloud (AWS, Azure, GCP), esto implica:
@@ -81,10 +81,10 @@ La línea correcta es:
 rsync -av --delete $ORIGEN/ $DESTINO/
 ```
 
-- !()[imagenes/a5.png]
+- ![](imagenes/a5.png)
 - Resultado
-- !()[imagenes/a6.png]
-- !()[imagenes/a7.png]
+- ![](imagenes/a6.png)
+- ![](imagenes/a7.png)
 # ¿Qué hace este comando?
 - `-a`: modo archivo (mantiene permisos, fechas, estructura).
 - `-v`: modo verbose (muestra lo que está haciendo).
