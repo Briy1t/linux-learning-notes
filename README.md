@@ -78,7 +78,10 @@ Proyectos que unifican conceptos del bloque 1 y 2
   Explicaciones y ejemplos de uso de los comandos más utilizados en administración Linux.
 
   [Comandos_esenciales](Comandos%20esenciales%20de%20Linux.md)
+  [Script para automatizar la copia de backups](Script_automarizarCpbackups.md)
 
+---
+En proceso...
 - **Permisos y ownership**  
   Notas sobre `chmod`, `chown`, `umask`, ACLs y casos reales.
 
