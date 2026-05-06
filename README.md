@@ -62,15 +62,16 @@ problemas que he resuelto en mi entorno Linux mientras estudio de forma autodida
   Introduce la gestión de usuarios, grupos y permisos en Linux. Explica archivos clave del sistema, comandos para administrar identidades, permisos básicos y avanzados, propietarios, grupos y permisos especiales como SUID, SGID y Sticky Bit. También incluye ACLs y        conceptos de sudoers para controlar privilegios de forma granular.
   
   - [Usuarios, Grupos y Permisos en Linux](Bloque_2_tema_1_usuarios_grupos_permisos.md)
-  - [](Gestión_de_Identidades_Empresarial.md)
+  - [Gestión_de_Identidades_Empresarial](Gestión_de_Identidades_Empresarial.md)
 
   
-  
+  - [rendimiento_maquina_virtual ](rendimiento_maquina_virtual.md): Diagnóstico completo del arranque lento en Ubuntu dentro de VirtualBox, incluyendo análisis de servicios, CPU, disco y mejoras aplicadas
 ## Proyectos 
 Proyectos que unifican conceptos del bloque 1 y 2
 
 - [Proyecto Alpha](Proyecto_Alpha.md): Un proyecto práctico de administración Linux: creación de estructura, usuarios, permisos, scripts, análisis de logs, procesos, servicios y almacenamiento del sistema.
 - [Operación centinela](Operacion_Centinela.md): Proyecto práctico de auditoría Linux: archivos, permisos, usuarios, procesos y seguridad
+- [El_intruso_silencioso.md](El_intruso_silencioso.md): Simulación de un acceso no autorizado mediante permisos especiales en Linux, analizando cómo un script intenta leer información sensible y cómo intervienen SUID, SGID y binarios del sistema.
 
   --- 
    -  **Otros**
@@ -81,22 +82,6 @@ Proyectos que unifican conceptos del bloque 1 y 2
   [Comandos_esenciales](Comandos%20esenciales%20de%20Linux.md)
   [Script para automatizar la copia de backups](Script_automarizarCpbackups.md)
 
----
-En proceso...
-- **Permisos y ownership**  
-  Notas sobre `chmod`, `chown`, `umask`, ACLs y casos reales.
-
-- **Scripting en Bash**  
-  Scripts simples creados durante mi aprendizaje.
-
-- **Networking básico**  
-  Comandos de red, diagnóstico y configuración inicial.
-
-- **Troubleshooting**  
-  Errores reales que he encontrado y cómo los resolví.
-
-- **Notas para el examen Linux+**  
-  Resúmenes, conceptos clave y recordatorios importantes.
 
 ---
 
